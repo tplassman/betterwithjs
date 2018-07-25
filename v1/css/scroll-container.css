@@ -1,0 +1,44 @@
+#scroll-container {
+  position: relative;
+  overflow-y: scroll;
+  height: 500px;
+  margin: 48px auto;
+}
+
+#scroll-container > em {
+  display: none;
+  position: fixed;
+  opacity: 0.5;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0,0,0,0.5);;
+}
+
+#scroll-container.is-loading > em {
+  display: block;
+}
+
+#scroll-container > em > img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#scroll-container > ul {
+  margin: 0;
+  padding: 0;
+}
+
+#scroll-container > ul > li {
+  list-style-type: none;
+}
+
+#scroll-container > ul > li > img {
+  display: block;
+  width: auto%;
+  height: 400px;
+  margin: 24px auto;
+}

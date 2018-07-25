@@ -1,0 +1,27 @@
+/**
+ * Dropdown
+ */
+
+#dropdown {
+  margin: 48px auto;
+}
+
+#dropdown > nav {
+  position: relative;
+  opacity: 0;
+  z-index: -1;
+  transform: translateY(-12px);
+  transition:
+    opacity 0.15s ease-in,
+    transform 0.15s ease-in;
+}
+
+#dropdown.is-active > nav {
+  opacity: 1;
+  z-index: 1;
+  transform: translateY(0);
+}
+
+#dropdown > nav > a {
+  display: block;
+}
