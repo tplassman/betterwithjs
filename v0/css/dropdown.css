@@ -1,0 +1,15 @@
+/**
+ * Dropdown
+ */
+
+#dropdown {
+  margin: 48px auto;
+}
+
+#dropdown > nav {
+  display: none;
+}
+
+#dropdown > nav > a {
+  display: block;
+}

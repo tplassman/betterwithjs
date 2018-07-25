@@ -1,0 +1,39 @@
+/**
+ * Slider
+ */
+
+/* Prev button */
+#slider {
+  position: relative;
+  margin: 48px auto;
+}
+
+#slider > button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#slider > button:nth-of-type(1) {
+  left: 0;
+}
+
+/* Next button */
+#slider > button:nth-of-type(2) {
+  right: 0;
+}
+
+#slider > ul {
+  margin: 0;
+  padding: 0;
+}
+
+#slider > ul > li {
+  display: none;
+  height: 300px;
+  color: white;
+  text-align: center;
+}
+#slider > ul > li:nth-of-type(1) { background-color: red; }
+#slider > ul > li:nth-of-type(2) { background-color: green; }
+#slider > ul > li:nth-of-type(3) { background-color: blue; }
